@@ -1,0 +1,12 @@
+from PyQt5 import QtCore
+p = QtCore.QPoint()
+print(p.x())
+print(p.isNull())
+p = QtCore.QPoint(10,0)
+print(p.x())
+p = QtCore.QPoint(QtCore.QPoint(11,0))
+print(p.x())
+p.setX(333)
+p.setY(21)
+print(p.x())
+print(p.manhattanLength())
